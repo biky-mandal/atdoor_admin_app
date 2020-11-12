@@ -1,0 +1,12 @@
+.contactus-div{
+    position: absolute;
+    width: 100%;
+    min-height: 34rem;
+    /* background-color: #e6e9ee; */
+    background-image: url('../../Resources/backgrounds/bg7.svg');
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}

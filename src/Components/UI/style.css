@@ -1,0 +1,22 @@
+.frm-lbl{
+    color: #4c5c78;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 1px;
+}
+.inpt-field{
+    border-left: 3px solid #4c5c78;
+    transition: all 0.1s;
+}
+.inpt-field:focus{
+    border-left: 3px solid #ffa600;
+    box-shadow: none;
+    outline: 0 none;
+}
+.alert-lbl{
+    color: #ff7944 !important;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}

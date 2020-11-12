@@ -1,0 +1,39 @@
+.navbar-bg{
+    background-color: #4c5c78 !important;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100000;
+}
+.drop-div{ 
+    cursor: pointer;
+    text-align: center;
+    background-color: #4c5c78;
+    transition: all 0.3s;
+}
+.drop-div:hover{ 
+    background-color: #4c5c78;
+}
+.drop-lbl{
+    color: #4c5c78 !important;
+    text-align: left;
+    transition: all 0.3s;
+}
+.drop-lbl span {
+    padding: 1rem;
+}
+.drop-lbl:hover{
+    transform: translateX(1rem);
+    background-color: #4c5c78;
+    color: #ffffff !important;
+}
+.link2{
+    cursor: pointer;
+    transition: all 0.3s;
+    border-left: 1px solid #4c5c78;
+
+}
+.link2:hover{
+    border-left: 1px solid #6b7b97;
+}

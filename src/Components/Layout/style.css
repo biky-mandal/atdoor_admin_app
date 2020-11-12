@@ -1,0 +1,17 @@
+.body-bar{
+    min-width: 100%;
+    min-height: auto;
+    display: flex;
+    flex-direction: row;
+}
+.body-bar{
+    background-color: #f1f1f1;
+
+}
+.midbar {
+    position: absolute;
+    left: 20%;
+    height: auto;
+    width: 80%;
+    background-color: #f1f1f1;
+}

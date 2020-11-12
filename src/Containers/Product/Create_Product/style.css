@@ -1,0 +1,221 @@
+.cr-0-cate{
+    position: fixed;
+    background-color: #e9ebf3;
+    width: 80%;
+    height: 91vh;
+    transition: 0.5s;
+    overflow-y: auto ;
+    z-index: 10;
+}
+.cr-1-div{
+    position: relative;
+    width: 60%;
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid #d1d1d1;
+    background-color: #fff;
+    margin-top: 5.5rem;
+    left: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cr-11-div{
+    position: absolute;
+    width: 35%;
+    height: 10rem;
+    border-radius: 10px;
+    border: 1px solid #d1d1d1;
+    background-color: #fff;
+    margin-top: -20.4rem;
+    margin-left: 40rem;
+    right: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cr-2-div{
+    position: relative;
+    width: 96%;
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid #d1d1d1;
+    background-color: #fff;
+    margin-top: 1rem;
+    left: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nameinput{
+    width:96%;
+    margin-top:1rem !important;
+}
+.desinput{
+    width:96%;
+    padding: 1rem 0 !important;
+    margin-top: 1rem !important;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+.dropzone{
+    width: 100%;
+    height: 20rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: 1px dashed #bebebe;
+    border-radius: 1px;
+    background-color: #f0eeee7e;
+}
+@keyframes logoanimate{
+    0%{
+        padding-top: 2rem;
+    }
+    50%{
+        padding-top: 0rem;
+    }
+    100%{
+        padding-top: 2rem;
+    }
+}
+.dropzone:hover .upload-logo{
+    color: rgb(152, 216, 158);
+    animation: logoanimate 1s infinite ease-in-out;
+}
+.upload-logo{
+    font-size: 150px;
+    color: #b8ceee;
+    transition: all 0.5s;
+}
+.upload-lbl{
+    font-size: 20px;
+    color: #939aad;
+}
+.thumbsContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.thumb{
+    display: inline-flex;
+    border-radius: 2;
+    border: none;
+    max-width: 150px;
+    max-height: 100px;
+    padding: 10px;
+    margin: 0 5px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px #939aad70;
+    transition: all 0.4s;
+}
+.thumb:hover{
+    transform: scale(1.5);
+}
+.thumbInner{
+    display: flex;
+    min-width: 0;
+    overflow: hidden;
+}
+.img{
+    display: block;
+    width: auto;
+    height: 100%;
+}
+.cr-3-4-main-div{
+    position: relative;
+    width: 96%;
+    height: auto;
+    left: 1rem;
+    display: flex;
+}
+.cr-3-div{
+    position: relative;
+    width: 49%;
+    height: 22rem;
+    border-radius: 10px;
+    border: 1px solid #d1d1d1;
+    background-color: #fff;
+    margin-top: 1rem;
+    margin-right: 0.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cr-3-1-div{
+    width: 100%;
+    height: 5rem;
+    border-bottom: 1px solid #5a5a5a7c;
+}
+.h-price-lbl{
+    font-size: 18px;
+    padding-left: 1rem;
+    line-height: 5rem;
+    font-family: 'Poppins', sans-serif;
+}
+.cr-3-2-div{
+    width: 100%;
+    height: 10rem;
+}
+.priceinput{
+    width:71%;
+    margin:1rem 2rem !important;
+}
+.cat-input{
+    width: 93%;
+    margin-top: 1rem !important;
+}
+.cr-3-2-1-div{
+    width: 100%;
+    height: 5rem;
+}
+.unit-2nd-lbl{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    margin-top: 2.9rem;
+    margin-left: -1rem;
+    color: #919191;
+}
+.cr-4-div{
+    position: relative;
+    width: 49%;
+    height: 22rem;
+    border-radius: 10px;
+    border: 1px solid #d1d1d1;
+    background-color: #fff;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 0.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Stock-am-input{
+    width:71%;
+    margin:1rem 2rem !important;
+}
+.Stock-qt-input{
+    width:71%;
+    margin:1rem 2rem !important;
+}
+.units{
+    width:30%;
+    margin-top: 1rem !important;
+    margin-left: 7rem !important;
+}
+.cr-pr-btn-div{
+    position: relative;
+    margin: 1rem 1rem;
+}
+.cr-pr-btn:focus{
+    outline: none;
+}

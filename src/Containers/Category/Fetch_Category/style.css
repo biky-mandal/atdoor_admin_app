@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #9b9797;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #4c5c78; 
+}
+
+.ftc-cate {
+    position: fixed;
+    background-color: #e9ebf3;
+    width: 80%;
+    height: 91vh;
+    transition: 0.5s;
+    overflow-y: scroll ;
+    z-index: 10;
+}
+.ftc-main-div{
+    position: absolute;
+    width: 96%;
+    height: 80vh;
+    border-radius: 10px;
+    /* border: 1px solid #d1d1d1; */
+    background-color: #fff;
+    margin-top: 5.5rem;
+    margin-bottom: 5rem;
+    left: 1rem;
+}
+.brd-cumb-div{
+    position: absolute;
+    width: 100%;
+    font-size: 1rem;
+    z-index: 1;
+    margin-top: 0rem;
+}
+.brd-cumb-div a{
+    color: #585858;
+    font-family: 'Poppins', sans-serif;
+}
+.brd-cumb-div a:active{
+    color: #8aaddb !important;
+    font-family: 'Poppins', sans-serif;
+}
+.h-lbl-div{
+    position: absolute;
+    width: 100%;
+    height: 2rem;
+    margin-top: 2.5rem;
+    z-index: 1;
+}
+.h-lbl{
+    font-size: 1.4rem;
+    font-family: 'Poppins', sans-serif;
+    color: #0e0c0c;
+    font-weight: 600;
+    padding-left: 1rem;
+}
+.crte-cat-btn{
+    display: block;
+    position: absolute;
+    width: 10rem;
+    height: 2.5rem;
+    margin-top: 2.5rem;
+    right: 1.7rem;
+    background-color: #4c5c783a;
+    border: 1px solid #d1d1d1;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 2.5rem;
+    transition: all 0.1s;
+    z-index: 1;
+}
+.crte-cat-btn a{
+    display: block;
+    color: #4c5c78;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+.crte-cat-btn:hover{
+    color: #1a9c0e;
+    background-color: #52ff2f36;
+    border: 1px solid #6ccf585e;
+}
+
+th{
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 3rem;
+    letter-spacing: 1px;
+    color: #4c5c78;
+}
+td{
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    color: #585858;
+}
+
+
+/*  */
+/* ******************************* */
+.option-input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    position: relative;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 30px;
+    width: 30px;
+    transition: all 0.15s ease-out 0s;
+    background: #cbd1d8;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    outline: none;
+    position: relative;
+    z-index: 1000;
+}
+.option-input:hover {
+    background: #9faab7;
+}
+.option-input:checked {
+    background: #4c5c78;
+}
+.option-input:checked::before {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    content: '✔';
+    display: inline-block;
+    font-size: 24px;
+    text-align: center;
+    line-height: 30px;
+}
+.option-input:checked::after {
+    background: #4c5c78;
+    content: '';
+    display: block;
+    position: relative;
+    z-index: 100;
+}
+.option-input.radio {
+    border-radius: 20%;
+}
+.option-input.radio::after {
+    border-radius: 50%;
+}
+.btn-u-d-div{
+    width: 17rem;
+    height: 2.5rem;
+    position: absolute;
+    margin-top: 2.5rem;
+    right: 13rem;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    z-index: 1;
+}
+.Delete-btn{
+    width: 8rem;
+    margin-right: 0.5rem;
+    background-color: #ff9c8a3a;
+    border: none;
+    color: #da523a;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 2.5rem;
+    transition: all 0.3s;
+}
+.Delete-btn:hover{
+    background-color: #ff9c8a5e;
+    color: #db2808;
+}
+.Delete-btn:focus{
+    outline: none;
+}
+.Update-btn{
+    width: 8rem;
+    margin-left: 0.5rem;
+    background-color: #ffb7313a;
+    border: none;
+    color: #dd9a1c;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 2.5rem;
+    transition: all 0.3s;
+}
+.Update-btn:hover{
+    background-color: #ffb7315e;
+    color: #db9209;
+}
+.Update-btn:focus{
+    outline: none;
+}
+.modal{
+    margin-top: 2rem;
+}
+.modal-body{
+    height: 11rem;
+}
+.des-inpt{
+    width: 96%;
+    left: 2%;
+}

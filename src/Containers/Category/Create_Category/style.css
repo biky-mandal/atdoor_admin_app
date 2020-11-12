@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #9b9797;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #4c5c78; 
+}
+
+.cr-cate {
+    position: fixed;
+    background-color: #e9ebf3;
+    width: 80%;
+    height: 91vh;
+    transition: 0.5s;
+    overflow-y: auto ;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+}
+.cr-main-div{
+    position: absolute;
+    width: 96%;
+    height: 70vh;
+    border-radius: 10px;
+    border: 1px solid #d1d1d1;
+    background-color: #fff;
+    margin-top: 5.5rem;
+    left: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.brd-cumb-div{
+    position: absolute;
+    width: 100%;
+    font-size: 1rem;
+    z-index: 1;
+    margin-top: 2rem;
+}
+.brd-cumb-div a{
+    color: #585858;
+    font-family: 'Poppins', sans-serif;
+}
+.brd-cumb-div a:active{
+    color: #8aaddb !important;
+    font-family: 'Poppins', sans-serif;
+}
+.h-lbl1-div{
+    position: absolute;
+    width: 100%;
+    height: 2rem;
+    margin-top: 2.5rem;
+}
+.h-lbl1{
+    font-size: 1.4rem;
+    font-family: 'Poppins', sans-serif;
+    color: #0e0c0c;
+    font-weight: 600;
+    padding-left: 1rem;
+}
+.cancel-cat-btn{
+    display: block;
+    position: absolute;
+    width: 10rem;
+    height: 2.5rem;
+    margin-top: 2.5rem;
+    right: 1.7rem;
+    background-color: transparent;
+    border: 1px solid #d1d1d1;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 2.5rem;
+    transition: all 0.1s;
+    z-index: 1;
+}
+.cancel-cat-btn a{
+    display: block;
+    color: #4c5c78;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+.cancel-cat-btn:hover{
+    background-color: #ff040449;
+    border: 1px solid #ff040449;
+}
+.cancel-cat-btn:hover a{
+    color: #cc0c0c;
+}
+
+.textinpt{
+    width:90%;
+    margin-top: 2rem !important;
+}
+.textinpt2{
+    width:90%;
+    margin-top: 2rem !important;
+}
+.btn-div{
+    width:90%;
+    position: relative;
+    margin-top: 1rem;
+    text-align: right;
+}
+.btn-div:focus{
+    outline: none !important;
+}

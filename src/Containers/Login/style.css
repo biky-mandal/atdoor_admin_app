@@ -1,0 +1,32 @@
+.login-div{
+    position: absolute;
+    width: 100%;
+    min-height: 34rem;
+    /* background-color: #e6e9ee; */
+    background-image: url('../../Resources/backgrounds/bg3.svg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form-div-login{
+    position: relative;
+    width: 80%;
+    height: 80vh;
+    border-radius: 1rem;
+    transition: all 0.5s;
+    background-color: #f4f5f7;
+    border: 1px solid #d1d2d4 ;
+}
+.login-btn{
+    width: 8rem;
+    height: 2.5rem;
+    background-color: #4c5c78;
+    border: none;
+    transition: all 0.5s;
+}
+.login-btn:hover{
+    transform: scaleX(1.1);
+    background-color: #4c5c78;
+}

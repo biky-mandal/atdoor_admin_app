@@ -1,0 +1,137 @@
+.ftc-main-div1{
+    position: absolute;
+    width: 96%;
+    height: auto;
+    border-radius: 10px;
+    /* border: 1px solid #d1d1d1; */
+    background-color: #fff;
+    margin-top: 5.5rem;
+    margin-bottom: 5rem;
+    left: 1rem;
+}
+th{
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    color: #4c5c78;
+    font-weight: 400;
+}
+td{
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    color: #4b6163;
+    line-height: 2rem;
+}
+.product-img-section{
+    width: 3rem;
+    height: 3rem;
+    padding: 0.1rem;
+}
+.o-o-s{
+    color: #db2808;
+    background-color: #ff9c8a5e;
+    padding: 0px 10px;
+    font-size: 12px;
+    border-radius: 10px;
+}
+.l{
+    color: #db9209;
+    background-color: #ffb7315e;
+    padding: 0px 10px;
+    font-size: 12px;
+    border-radius: 10px;
+
+}
+.i-s{
+    color: #249c06;
+    background-color: #66ff473a;
+    padding: 0px 10px;
+    font-size: 12px;
+    border-radius: 10px;
+
+}
+.product-modal-body{
+    height: 25rem;
+}
+.update-set{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.price-inpt{
+    width: 90%;
+    margin: 1rem !important;
+}
+.des-inpt{
+    width: 90%;
+    margin-right: 1.8rem !important;
+    margin-top: 1rem !important;
+}
+.tag-div{
+    width: 90%;
+    height: 3rem;
+    display: flex;
+    margin-top: 0.2rem !important;
+    flex-direction: row;
+    align-items: center;
+}
+.lbl-tag{
+    padding: 0.5rem 2rem;
+    font-size: 16px;
+    margin: 0rem 1rem;
+    color: rgb(165, 149, 8);
+    border-radius: 30px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #dbe91f31;
+}
+.btn-u-d-div1{
+    width: 28rem;
+    height: 2.5rem;
+    position: absolute;
+    margin-top: 2.5rem;
+    right: 13rem;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    z-index: 1;
+}
+.Import-btn{
+    width: 5rem;
+    font-size: 25px;
+    margin-right: 0.5rem;
+    background-color: #31d6ff3a;
+    border: none;
+    color: #0b6792;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 2.5rem;
+    transition: all 0.3s;
+}
+.Import-btn:hover{
+    background-color: #31d6ff5e;
+    color: #064b6b;
+}
+.Import-btn:focus{
+    outline: none;
+}
+.Export-btn{
+    width: 5rem;
+    font-size: 25px;
+    margin-left: 0.5rem;
+    margin-right: 1rem;
+    background-color: #8eff313a;
+    border: none;
+    color: #46ad0a;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 2.5rem;
+    transition: all 0.3s;
+}
+.Export-btn:hover{
+    background-color: #8eff315e;
+    color: #3d960a;
+}
+.Export-btn:focus{
+    outline: none;
+}

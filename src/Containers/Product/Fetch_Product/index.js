@@ -115,6 +115,7 @@ const Fetch_Product = (props) => {
     const update_Btn_Clicked = () => {
         productState.map(f_product => {
             if (f_product.select === true) {
+                setStock_amount(f_product.stock_amount);
                 set_Up_amt_original_price(f_product.amt_original_price);
                 set_Up_amt_selling_price(f_product.amt_selling_price);
                 set_Up_qty_original_price(f_product.qty_original_price);
@@ -181,9 +182,9 @@ const Fetch_Product = (props) => {
         let new_stock;
 
         if (stock_amount === '') {
-            new_stock = parseInt(stock_quantity, 10) + parseInt(stock_qty_to_be_imported_or_exported, 10);
+            new_stock = parseFloat(stock_quantity, 10) + parseFloat(stock_qty_to_be_imported_or_exported, 10);
         } if (stock_quantity === '') {
-            new_stock = parseInt(stock_amount, 10) + parseInt(stock_am_to_be_imported_or_exported, 10);
+            new_stock = parseFloat(stock_amount, 10) + parseFloat(stock_am_to_be_imported_or_exported, 10);
         }
 
         // Let's dispatch
@@ -208,11 +209,13 @@ const Fetch_Product = (props) => {
             alert('This Product is Not Available..')
         } else {
             // If the Product is available
+            // This section is for quantity and proceed only when the stock amount is empty.
             if (stock_amount === '') {
                 // agian checking for that exporting amount is lesser than the current amount or not.
                 // Suppose we have 10kg stock and we want to export 11 kg then it will not possible.
-                if (parseInt(parseInt(stock_quantity, 10) >= stock_qty_to_be_imported_or_exported, 10)) {
-                    new_stock = parseInt(stock_quantity, 10) - parseInt(stock_qty_to_be_imported_or_exported, 10);
+                if (parseFloat(stock_quantity, 10) >= parseFloat(stock_qty_to_be_imported_or_exported, 10)) {
+                    
+                    new_stock = parseFloat(stock_quantity, 10) - parseFloat(stock_qty_to_be_imported_or_exported, 10);
 
                     // Let's dispatch
                     dispatch(export_product_action(
@@ -223,11 +226,13 @@ const Fetch_Product = (props) => {
                         name
                     ))
                 } else {
-                    alert('Exporting Amount must be less or equal to Stock.')
+                    alert('Exporting Quantity must be less or equal to Stock.')
                 }
+            
+                // This section is for amount section
             } if (stock_quantity === '') {
-                if (parseInt(parseInt(stock_amount, 10) >= stock_qty_to_be_imported_or_exported, 10)) {
-                    new_stock = parseInt(stock_amount, 10) - parseInt(stock_qty_to_be_imported_or_exported, 10);
+                if (parseFloat(stock_amount, 10) >= parseFloat(stock_am_to_be_imported_or_exported, 10)) {
+                    new_stock = parseFloat(stock_amount, 10) - parseFloat(stock_am_to_be_imported_or_exported, 10);
 
                     // Let's dispatch
                     dispatch(export_product_action(
@@ -365,22 +370,22 @@ const Fetch_Product = (props) => {
                                         </td>
                                         <td>
                                             {
-                                                parseInt(prodct.stock_amount, 10) === 0 ? <label className="o-o-s">OUT OF STOCK</label> : null
+                                                parseFloat(prodct.stock_amount, 10) === 0 ? <label className="o-o-s">OUT OF STOCK</label> : null
                                             }
                                             {
-                                                parseInt(prodct.stock_quantity, 10) === 0 ? <label className="o-o-s">OUT OF STOCK</label> : null
+                                                parseFloat(prodct.stock_quantity, 10) === 0 ? <label className="o-o-s">OUT OF STOCK</label> : null
                                             }
                                             {
-                                                parseInt(prodct.stock_amount, 10) > 0 && parseInt(prodct.stock_amount, 10) < 10 ? <label className="l">LIMITED</label> : null
+                                                parseFloat(prodct.stock_amount, 10) > 0 && parseFloat(prodct.stock_amount, 10) < 10 ? <label className="l">LIMITED</label> : null
                                             }
                                             {
-                                                parseInt(prodct.stock_quantity, 10) > 0 && parseInt(prodct.stock_quantity, 10) < 10 ? <label className="l">LIMITED</label> : null
+                                                parseFloat(prodct.stock_quantity, 10) > 0 && parseFloat(prodct.stock_quantity, 10) < 10 ? <label className="l">LIMITED</label> : null
                                             }
                                             {
-                                                parseInt(prodct.stock_amount, 10) >= 10 ? <label className="i-s">IN STOCK</label> : null
+                                                parseFloat(prodct.stock_amount, 10) >= 10 ? <label className="i-s">IN STOCK</label> : null
                                             }
                                             {
-                                                parseInt(prodct.stock_quantity, 10) >= 10 ? <label className="i-s"> IN STOCK</label> : null
+                                                parseFloat(prodct.stock_quantity, 10) >= 10 ? <label className="i-s"> IN STOCK</label> : null
                                             }
                                         </td>
                                     </tr>
@@ -394,7 +399,7 @@ const Fetch_Product = (props) => {
                 <Modal size="lg" className="modal" show={open} onHide={handleModalClose} animation={true}>
                     <Modal.Body className="product-modal-body">
                         {
-                            up_amt_original_price === '' ?
+                            stock_amount === '' ?
                                 <div className="update-set">
                                     <TextField
                                         label="Update Original Price(Qty)"

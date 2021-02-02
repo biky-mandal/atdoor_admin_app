@@ -33,6 +33,7 @@ const Create_Product = (props) => {
     const [stock_qty, setStock_qty] = useState('');
     const [unit, setUnit] = useState('');
     const [qtyunit, setQtyUnit] = useState('');
+    const [base_quantity, setBase_quantity] = useState('');
     // const [productPictures, setProductPictures] = useState([]);
 
     // const handleProductPicture = (e) => {
@@ -130,6 +131,7 @@ const Create_Product = (props) => {
         new_product.append('category', Category);
         new_product.append('unit', unit);
         new_product.append('qtyunit', qtyunit);
+        new_product.append('base_quantity', base_quantity);
 
         for (let pic of files) {
             new_product.append('productPicture', pic)
@@ -141,7 +143,7 @@ const Create_Product = (props) => {
     return (
         <>
             <Layout sidebar>
-            {product.loading ? <Loading /> : null}
+                {product.loading ? <Loading /> : null}
                 <div className="cr-0-cate">
                     <div className="brd-cumb-div">
                         <Breadcrumb>
@@ -194,6 +196,14 @@ const Create_Product = (props) => {
                                 </MenuItem>
                             ))}
                         </TextField>
+                        <TextField
+                            label="Base Amount"
+                            variant="outlined"
+                            type="Number"
+                            value={base_quantity}
+                            onChange={e => setBase_quantity(e.target.value)}
+                            className="cat-input"
+                        />
                     </div>
                     {/* **********Picture Section********************** */}
                     <div className="cr-2-div">
